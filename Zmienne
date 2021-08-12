@@ -1,0 +1,10 @@
+public class Zmienne {
+    public static void main(String args[]) {
+    
+    double liczbaPi = 3.14;
+    String imie = "Bartosz", nazwisko = "Sowa", wiek = "17";
+    
+    System.out.println(imie + " " + nazwisko + " - " + wiek + " lat.");
+    
+    }
+}
