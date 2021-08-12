@@ -1,0 +1,17 @@
+public class MyClass {
+    public static void main(String args[]) {
+    
+    int a = 103, b = 56, c = 123, d = 33;
+    
+    String czyParzysteA = a%2 == 0 ? "parzysta" : "nieparzysta";
+    String czyParzysteB = b%2 == 0 ? "parzysta" : "nieparzysta";
+    String czyParzysteC = c%2 == 0 ? "parzysta" : "nieparzysta";
+    String czyParzysteD = d%2 == 0 ? "parzysta" : "nieparzysta";
+    
+    System.out.println(czyParzysteA);
+    System.out.println(czyParzysteB);
+    System.out.println(czyParzysteC);
+    System.out.println(czyParzysteD);
+    
+    }
+}
