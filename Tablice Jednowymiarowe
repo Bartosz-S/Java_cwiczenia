@@ -1,0 +1,14 @@
+public class tabliceJednowymiarowe {
+    public static void main(String args[]) {
+    
+    String[] imieNazwisko = {"Adam Kowalski", "Andrzej Motyka", "Barbara Komar"};
+    int[] wiek = {16, 9, 34};
+    
+    System.out.println(imieNazwisko[0] + " lat " + wiek[0] + ".");
+    
+    System.out.println(imieNazwisko.length + " " + wiek.length);
+    
+    System.out.println(imieNazwisko[imieNazwisko.length - 1] + " lat " + wiek[wiek.length - 1] + ".");
+    
+    }
+}
