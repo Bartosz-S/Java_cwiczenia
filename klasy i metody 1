@@ -23,14 +23,14 @@ class Prostokat {
     int dlugosc;
     int wysokosc;
 
-    void pole(){
-        int p = dlugosc * wysokosc;
+    int pole(){
+        return dlugosc * wysokosc;
     }
-    void obwod(){
-        int obw = 2*(dlugosc + wysokosc);
+    int obwod(){
+        return 2*(dlugosc + wysokosc);
     }
-    void przekatna(){
-        double x = sqrt(dlugosc^2 + wysokosc^2);
+    double przekatna(){
+        return sqrt(dlugosc^2 + wysokosc^2);
     }
 }
 
