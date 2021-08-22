@@ -1,0 +1,55 @@
+package com.company;
+
+import static java.lang.Math.sqrt;
+
+public class Main {
+
+    public static void main(String[] args) {
+	
+    }
+}
+
+class Human {
+    int Age;
+    int Height;
+    int Weight;
+    String Name;
+    boolean isMale;
+}
+
+class Prostokat {
+    int dlugosc;
+    int wysokosc;
+
+    void pole(){
+        int p = dlugosc * wysokosc;
+    }
+    void obwod(){
+        int obw = 2*(dlugosc + wysokosc);
+    }
+    void przekatna(){
+        double x = sqrt(dlugosc^2 + wysokosc^2);
+    }
+}
+
+class MyNumber
+{
+    int number;
+
+    boolean isOdd(){
+        if ((number%2) == 1)
+            return true;
+        return false;
+    }
+
+    boolean isEven(){
+        if ((number%2) == 0)
+            return true;
+        return false;
+    }
+
+    double pierwiastek(){
+        return sqrt(number);
+    }
+
+}
