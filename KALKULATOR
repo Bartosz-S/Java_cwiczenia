@@ -1,5 +1,3 @@
-package com.sowa;
-
 import java.util.Scanner;
 
 public class Main {
@@ -17,8 +15,6 @@ public class Main {
             Scanner scanner1 = new Scanner(System.in);
             String method = scanner1.next();
 
-            scanner = new Scanner(System.in);
-            num = scanner.nextInt();
 
             switch (method) {
                 case "+":
@@ -41,6 +37,9 @@ public class Main {
                 default:
                     break;
             }
+
+            scanner = new Scanner(System.in);
+            num = scanner.nextInt();
         }
     }
 }
