@@ -1,0 +1,46 @@
+package com.sowa;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+
+        int sum = num;
+
+        while(true)
+        {
+
+            Scanner scanner1 = new Scanner(System.in);
+            String method = scanner1.next();
+
+            scanner = new Scanner(System.in);
+            num = scanner.nextInt();
+
+            switch (method) {
+                case "+":
+                    sum += num;
+
+                case "-":
+                    sum -= num;
+
+
+                case "=":
+                    System.out.println(sum);
+
+                    System.out.println("Exit?");
+                    Scanner scanner2 = new Scanner(System.in);
+                    String exit = scanner2.next();
+
+                    if (exit.equals("yes")) break;
+                    else continue;
+
+                default:
+                    break;
+            }
+        }
+    }
+}
