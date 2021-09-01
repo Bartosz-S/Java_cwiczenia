@@ -3,43 +3,37 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        
+        String method;
 
         Scanner scanner = new Scanner(System.in);
-        int num = scanner.nextInt();
+        int sum = scanner.nextInt();
 
-        int sum = num;
 
-        while(true)
+        for(;;)
         {
+            while(true)
+            {
+                Scanner scanner1 = new Scanner(System.in);
+                method = scanner1.next();
 
-            Scanner scanner1 = new Scanner(System.in);
-            String method = scanner1.next();
+                if ("=".equals(method)) break;
 
+                scanner = new Scanner(System.in);
+                int num = scanner.nextInt();
 
-            switch (method) {
-                case "+":
-                    sum += num;
-
-                case "-":
-                    sum -= num;
-
-
-                case "=":
-                    System.out.println(sum);
-
-                    System.out.println("Exit?");
-                    Scanner scanner2 = new Scanner(System.in);
-                    String exit = scanner2.next();
-
-                    if (exit.equals("yes")) break;
-                    else continue;
-
-                default:
-                    break;
+                if ("-".equals(method)) sum -= num;
+                else if ("+".equals(method)) sum += num;
+                else continue;
             }
+            System.out.println(sum);
+            
+            System.out.println("Exit?");
+            Scanner scanner2 = new Scanner(System.in);
+            String exit = scanner2.next();
 
-            scanner = new Scanner(System.in);
-            num = scanner.nextInt();
+            if (exit.equals("yes")) break;
+            else continue;
         }
     }
 }
