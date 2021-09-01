@@ -3,15 +3,16 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        
+
         String method;
 
+        for(;;)
+        {
         Scanner scanner = new Scanner(System.in);
         int sum = scanner.nextInt();
 
 
-        for(;;)
-        {
+        
             while(true)
             {
                 Scanner scanner1 = new Scanner(System.in);
@@ -27,7 +28,7 @@ public class Main {
                 else continue;
             }
             System.out.println(sum);
-            
+
             System.out.println("Exit?");
             Scanner scanner2 = new Scanner(System.in);
             String exit = scanner2.next();
