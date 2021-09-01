@@ -10,8 +10,6 @@ public class Main {
         {
         Scanner scanner = new Scanner(System.in);
         int sum = scanner.nextInt();
-
-
         
             while(true)
             {
